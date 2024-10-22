@@ -1,9 +1,16 @@
+import { Header } from "./components/Header"
+import { Router } from "./router"
+import { GlobalStyles } from "./styles/global"
+import { BrowserRouter } from 'react-router-dom'
+
 
 
 export function App() {
   return (
-    <div>
-      <h1>hello word</h1>
-    </div>
+    <BrowserRouter>
+     <GlobalStyles />
+     <Header />
+     <Router />
+    </BrowserRouter>
   )
 }
